@@ -29,12 +29,12 @@ async def up(event):
 async def start(event):
     ok = await event.client(GetFullUserRequest(event.sender_id))
     await event.reply(
-        f"👋🏻 **Hello {ok.user.first_name},**\n\nI'm **Video Compressor Pro** 🗳\nI Can Encode & Compress Your Videos. Reduce Size of Videos With Negligible Quality Change! You Can Generate Sample Videos/ Screenshots Too 🤗!",
+        f"👋🏻 **Hello {ok.user.first_name},**\n\nI'm **Video Compressor Pro** 🗳\nI Can Encode & Compress Your Videos. Reduce Size of Videos With Negligible Quality Change! You Can Generate Sample Videos/ Screenshots Too 🤗\n but it may take time🥲!",
         buttons=[
             [Button.inline("⚙️ HELP ⚙️", data="ihelp")],
             [
-                Button.url("📢 CHANNEL", url="t.me/AsmSafone"),
-                Button.url("SUPPORT 💬", url="t.me/SafoTheBot"),
+                Button.url("📢 CHANNEL", url="t.me/HEXBOTS"),
+                Button.url("SUPPORT 💬", url="t.me/hexbotsdg"),
             ],
         ],
     )
@@ -42,13 +42,13 @@ async def start(event):
 
 async def help(event):
     await event.reply(
-        "🗳 **Video Compressor Pro Bot :**\n\n☑️ Can Compress Your Videos With Negligible Quality Change.\n☑️ Can Generate Sample Videos & Screenshots Too.\n☑️ Just Send or Forward Video To Get Available Options.\n☑️ Due To Quality Settings Bot Takes Time To Compress.\n☑️ So, Be Patience & Send Videos One By One After Completing. Please Don't Spam To The Bot. Otherwise You'll Be Ban For Permanent!\n\n🏷 **Developer: @I_Am_Only_One_1** 👑"
+        "🗳 **Video Compressor Pro Bot :**\n\n☑️ Can Compress Your Videos With Negligible Quality Change.\n☑️ Can Generate Sample Videos & Screenshots Too.\n☑️ Just Send or Forward Video To Get Available Options.\n☑️ Due To Quality Settings Bot Takes Time To Compress.\n☑️ So, Be Patience & Send Videos One By One After Completing. Please Don't Spam To The Bot. Otherwise You'll Be Ban For Permanent!\n\n🏷 **Developer: @HEXBOTS** 👑"
     )
 
 
 async def ihelp(event):
     await event.edit(
-        "🗳 **Video Compressor Pro Bot :**\n\n☑️ Can Compress Your Videos With Negligible Quality Change.\n☑️ Can Generate Sample Videos & Screenshots Too.\n☑️ Just Send or Forward Video To Get Available Options.\n☑️ Due To Quality Settings Bot Takes Time To Compress.\n☑️ So, Be Patience & Send Videos One By One After Completing. Please Don't Spam To The Bot. Otherwise You'll Be Ban For Permanent!\n\n🏷 **Developer: @I_Am_Only_One_1** 👑",
+        "🗳 **Video Compressor Pro Bot :**\n\n☑️ Can Compress Your Videos With Negligible Quality Change.\n☑️ Can Generate Sample Videos & Screenshots Too.\n☑️ Just Send or Forward Video To Get Available Options.\n☑️ Due To Quality Settings Bot Takes Time To Compress.\n☑️ So, Be Patience & Send Videos One By One After Completing. Please Don't Spam To The Bot. Otherwise You'll Be Ban For Permanent!\n\n🏷 **Developer: @HEXBOTS** 👑",
         buttons=[Button.inline("🔙 BACK", data="beck")],
     )
 
@@ -56,12 +56,12 @@ async def ihelp(event):
 async def beck(event):
     ok = await event.client(GetFullUserRequest(event.sender_id))
     await event.edit(
-        f"👋🏻 **Hello {ok.user.first_name},**\n\nI'm **Video Compressor Pro** 🗳\nI Can Encode & Compress Your Videos. Reduce Size of Videos With Negligible Quality Change! You Can Generate Sample Videos/ Screenshots Too 🤗!",
+        f"👋🏻 **Hello {ok.user.first_name},**\n\nI'm **Video Compressor Pro** 🗳\nI Can Encode & Compress Your Videos. Reduce Size of Videos With Negligible Quality Change! You Can Generate Sample Videos/ Screenshots Too 🤗! But it take time🥲",
         buttons=[
             [Button.inline("⚙️ HELP ⚙️", data="ihelp")],
             [
-                Button.url("📢 CHANNEL", url="t.me/AsmSafone"),
-                Button.url("SUPPORT 💬", url="t.me/SafoTheBot"),
+                Button.url("📢 CHANNEL", url="t.me/HEXBOTS"),
+                Button.url("SUPPORT 💬", url="t.me/hexbotsdg"),
             ],
         ],
     )
