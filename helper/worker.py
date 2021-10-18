@@ -60,10 +60,10 @@ async def stats(e):
         out, dl, thum, dtime = wh.split(";")
         ot = hbs(int(Path(out).stat().st_size))
         ov = hbs(int(Path(dl).stat().st_size))
-        ans = f"Downloaded:\n{ov}\n\nCompressing:\n{ot}\n\nGet Updates @AsmSafone"
+        ans = f"Downloaded:\n{ov}\n\nCompressing:\n{ot}\n\nGet Updates @HEXBOTS"
         await e.answer(ans, cache_time=0, alert=True)
     except BaseException:
-        await e.answer("Something Went Wrong 🤔\nPlease Resend That Media!", cache_time=0, alert=True)
+        await e.answer("Something Went Wrong🥲\nPlease Resend That Media!", cache_time=0, alert=True)
 
 
 async def encc(e):
@@ -158,7 +158,7 @@ async def sample(e):
     er = stderr.decode()
     try:
         if er:
-            await e.edit(str(er) + "\n\n**ERROR** Contact @I_Am_Only_One_1 👑")
+            await e.edit(str(er) + "\n\n**ERROR** Contact @hexbotsdg 👑")
             COUNT.remove(e.chat_id)
             os.remove(dl)
             os.remove(out)
@@ -216,7 +216,7 @@ async def encod(event):
         if len(COUNT) > 2 and user.id != OWNER:
             llink = (await event.client(cl(LOG))).link
             return await xxx.edit(
-                "Already 5 Process Going On!⚠️ \n\nPlease Come Back After A While.\nCheck Live Status on Status Channel.",
+                "Already 3 Process Going On!⚠️ \n\nPlease Come Back After A While.\nCheck Live Status on Status Channel.",
                 buttons=[Button.url("🤖 Show Live Status 🤖", url=llink)],
             )
         if user.id in COUNT and user.id != OWNER:
@@ -327,7 +327,7 @@ async def customenc(e, key):
     er = stderr.decode()
     try:
         if er:
-            await e.edit(str(er) + "\n\n**ERROR** Contact @I_Am_Only_One_1 👑")
+            await e.edit(str(er) + "\n\n**ERROR** Contact @HEXBOTSDG 👑")
             COUNT.remove(e.chat_id)
             os.remove(dl)
             return os.remove(out)
@@ -370,7 +370,7 @@ async def customenc(e, key):
     a1 = await info(dl, e)
     a2 = await info(out, e)
     dk = await ds.reply(
-        f"Original Size : {hbs(org)}\nCompressed Size : {hbs(com)}\nCompressed Percentage : {per}\n\nMediainfo: [Before]({a1}) | [After]({a2})\n\nDownloaded in {x}\nCompressed in {xx}\nUploaded in {xxx}\n\n**@AsmSafone | @SafoTheBot**",
+        f"Original Size : {hbs(org)}\nCompressed Size : {hbs(com)}\nCompressed Percentage : {per}\n\nMediainfo: [Before]({a1}) | [After]({a2})\n\nDownloaded in {x}\nCompressed in {xx}\nUploaded in {xxx}\n\n**@HEXBOTS | @hexbotsdg**",
         link_preview=False,
     )
     await ds.forward_to(LOG)
